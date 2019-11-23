@@ -1,0 +1,3 @@
+MSer	KEYWORD1
+Morse	KEYWORD1
+play	KEYWORD2
