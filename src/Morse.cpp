@@ -7,12 +7,12 @@ v1.0
 #include "Morse.h"
 
 Morse::Morse(byte pin, byte unit, MDebug debug = NONE) {
-      _pin = pin;
-      _unit = unit;
-			_debug = debug;
-			if (_debug > LED) Serial.begin(9600);
-			if (_debug == LED or _debug == SERLED) pinMode(13, OUTPUT);
-      pinMode(_pin, OUTPUT);
+  _pin = pin;
+  _unit = unit;
+  _debug = debug;
+  if (_debug > LED) Serial.begin(9600);
+  if (_debug == LED or _debug == SERLED) pinMode(13, OUTPUT);
+  pinMode(_pin, OUTPUT);
 }
 
 void Morse::play (MSymb ser[], byte num) {
@@ -38,12 +38,11 @@ void Morse::play (MSymb ser[], byte num) {
 }
 
 void Morse::play (String &ser) {
-	
 	for(byte i = 0; i < ser.length(); i++) {
-		if (ser[i] == '.' or ser[i] == '*')		_dot();
-		else if (ser[i] == '-')					_dash();
-		else if (ser[i] == '/')					_lspace();
-		else if (ser[i] == ' ')					_wspace();
+		if (ser[i] == '.' or ser[i] == '*') _dot();
+		else if (ser[i] == '-')	_dash();
+		else if (ser[i] == ' ')	_lspace();
+		else if (ser[i] == '/')	_wspace();
 
 		if ((i != ser.length()-1) and (ser[i+1] != '/') and (ser[i+1] != ' ')
 		and (ser[i] != '/') and (ser[i] != ' '))	_pspace();
