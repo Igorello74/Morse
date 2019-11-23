@@ -31,6 +31,8 @@ Whatever way you choose, you need to use the `play` function:
 - `void play (String &ser)`
   - **Possible sequence:** `String sos = "***---***";`
 
+As you see, it's much more convenient and easy to use the second way, so the array method can be called legacy.
+
 ## setUnit
 ```cpp
 void setUnit(byte unit);
@@ -47,6 +49,13 @@ As you have already seen, there is the *debug* variable in the constructor. It c
 |`LED`      |pulses the built-in led according to the morse signal
 |`SER`      |sends messages into Serial in the Array notation (*see above*)
 |`SERLED`   |combines two previous modes
+
+# Examples
+All examples are present in the [examples/](examples/) folder.
+
+# Compatibility
+This library has been tested with *Arduino Uno* and *Nano*. In addition, it's supposed to work with most of Arduino-like boards. 
+The library successfully works in either **Arduino IDE** and **PlatformIO**. I recomend the last!
 
 # License
 The library is published under the ***MIT License***, for more details, see [LICENSE](LICENSE).
