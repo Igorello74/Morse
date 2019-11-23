@@ -1,5 +1,5 @@
 /*
-In this example we will play a morse sequence written as a String, it's more convinient than using the array method.
+In this example we will play a morse sequence written as a String, it's more convenient than using the array method.
 */
 
 #include <Morse.h>
