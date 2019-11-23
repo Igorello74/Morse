@@ -10,5 +10,5 @@ void setup() {
   }
 
 void loop() {
-	morser.play(seq, sizeof(seq)); // play the morse sequnce we saved above. The second argument is the number of members in the array
+  morser.play(seq, sizeof(seq)); // play the morse sequnce we saved above. The second argument is the number of members in the array
 }
