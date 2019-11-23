@@ -20,20 +20,20 @@ enum MDebug : byte {NONE, LED, SER, SERLED};
 class Morse {
   public:
     Morse(byte pin, byte unit, MDebug debug = NONE); // constructor, unit is the duration of one unit (equals to a dot)
-		void play (MSymb ser[], byte num); // plays an array of MSymbs (look above)
-		void play (String &ser); //plays a String consisting of [*], [-], [
-		void setUnit (byte unit); // changes the unit to the presented
-	private:
-		void _dot();
-		void _dash();
-		void _pspace();
-		void _lspace();
-		void _wspace();
-		
-		byte _pin;
-		byte _unit;
-		
-		MDebug _debug;
+    void play (MSymb ser[], byte num); // plays an array of MSymbs (look above)
+    void play (String &ser); //plays a String consisting of [*], [-], [
+    void setUnit (byte unit); // changes the unit to the presented
+  private:
+    void _dot();
+    void _dash();
+    void _pspace();
+    void _lspace();
+    void _wspace();
+    
+    byte _pin;
+    byte _unit;
+    
+    MDebug _debug;
 };
  
 #endif
