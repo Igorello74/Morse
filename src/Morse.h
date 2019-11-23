@@ -12,7 +12,7 @@ v1.0
 enum MSymb : byte { DO = 1, DA, PS, LS, WS };
 enum MDebug : byte { NONE, LED, SER, SERLED };
  
-class Morse	{
+class Morse {
   public:
     Morse(byte pin, byte unit, MDebug debug = NONE);
 		void play (MSymb ser[], byte num);
