@@ -1,3 +1,7 @@
+/*
+In this example we will play a morse sequence written as an array of MSers, it's not as convenient as the String method, it's legacy.
+*/
+
 #include <Morse.h>
 
 MSer seq[] = {DO, PS, DO, PS, DO, PS, DA, PS, DA, PS, DA, PS, DO, PS, DO, PS, DO, WS}; // create a sequence to play
